@@ -8,4 +8,4 @@ RUN pip install -r requirements.txt
 
 EXPOSE 80
 
-ENTRYPOINT ["python","run.py"]
+CMD ["python","run.py"]
