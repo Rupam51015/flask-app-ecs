@@ -9,7 +9,7 @@ services:
     environment:
       - PYTHONUNBUFFERED=1            # Forces real-time log printing in your terminal
     healthcheck:
-      test: ["CMD","curl",-f","http://localhost:80/health"]
+      test: ["CMD","curl","-f","http://localhost:80/health"]
       interval: 10s
       timeout: 5s
       retries: 3
