@@ -2,7 +2,7 @@
 
 A minimal Flask web application built for learning containerization and deployment to **AWS ECS (Elastic Container Service)**.
 
-![Python](https://shields.io)
+![Python](https://img.shields.io/badge/Python-3.14-blue)
 ![Flask](https://img.shields.io/badge/Flask-3.1.1-green)
 ![Docker](https://img.shields.io/badge/Docker-Ready-2496ED)
 ![AWS ECS](https://img.shields.io/badge/AWS-ECS-FF9900)
@@ -18,7 +18,7 @@ A minimal Flask web application built for learning containerization and deployme
 | Component | Technology |
 |-----------|------------|
 | Framework | Flask 3.1.1 |
-| Runtime   | Python 3.11 |
+| Runtime   | Python 3.14 |
 | Container | Docker (python-slim) |
 | CI/CD     | Jenkins (Docker-in-Docker Setup) |
 | Webhook   | Smee.io Webhook Proxy |
