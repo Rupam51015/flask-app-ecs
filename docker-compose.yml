@@ -7,7 +7,7 @@ services:
       - .:/app
       - /app/__pycache__/
     environment:
-      - PYTHONUNBUFFERED=1            # Forces real-time log printing in your terminal
+      - PYTHONUNBUFFERED=1            # Forces real-time log printing in terminal
     healthcheck:
       test: curl -f http://localhost:80/health || exit 1
       interval: 10s
