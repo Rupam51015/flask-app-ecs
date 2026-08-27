@@ -48,7 +48,7 @@ pip install -r requirements.txt
 python run.py
 ```
 
-App runs at **http://localhost:80**.
+App runs at **http://localhost:8000**.
 
 ### Run with Docker
 
