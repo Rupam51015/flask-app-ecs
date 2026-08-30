@@ -1,5 +1,5 @@
 pipeline{
-    agent any;
+    agent { label "dev"};
     stages{
         stage("code clone"){
             steps{
@@ -38,6 +38,16 @@ pipeline{
                         sleep 2
                     done'
                 '''
+            }
+        }
+    }
+    post{
+        failure {
+            script {
+                emailext from: 'rumapdebnath75@gmail.com',
+                    body: "Build Failed",
+                    subject: "Bad News: Your build has failed!",
+                    to: 'rumapdebnath75@gmail.com'
             }
         }
     }
